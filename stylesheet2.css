@@ -1,7 +1,11 @@
 .row {
-    padding-top: 30px;
+  padding-top: 30px;
+}
+header {
+  background-color: black;
+  color: aliceblue;
 }
 
-footer {
-    background-color: dimgray;
+body {
+  background-color: darkgray;
 }

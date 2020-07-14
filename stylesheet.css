@@ -1,11 +1,12 @@
-
 .rs {
-margin-inline-start: 610px;
-margin-top: 5px;
+  margin-inline-start: 610px;
+  margin-top: 5px;
 }
 
 footer {
-    margin-top: 200px;
-    background-color: crimson;
+  margin-top: 200px;
+  background-color: black;
 }
-
+body {
+  background-color: darkgray;
+}
