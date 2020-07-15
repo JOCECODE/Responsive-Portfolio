@@ -1,6 +1,6 @@
-This project uses bootstrap for the components. I used bootstrap's navbar and cards components and the project has 3 html files (portfolio.html, index.html, contact.html) and 3 different css files.
+This project uses the Bootstrap CSS Framework to create a mobile responsive portfolio. I used bootstrap's navbar and cards components and the project has 3 html files (portfolio.html, index.html, contact.html) and 3 different css files.
 
-There is also a mail.php file for the contact form.
+There is an index.md for github compatibility.
 
 The picture files are in a folder and these were obtained online.
 
