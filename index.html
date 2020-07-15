@@ -9,6 +9,7 @@
       type="text/css"
       href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"
     />
+    
     <!-- BOOTSTRAP LINK -->
     <link
       rel="stylesheet"
@@ -18,7 +19,7 @@
     />
     <!-- CSS STYLE SHEET -->
     <link rel="stylesheet" href="./stylesheet.css" />
-    <title>Home</title>
+    <title>ABOUT</title>
     <!-- TEXT STYLES -->
   </head>
 
@@ -29,39 +30,46 @@
         JOSE ULICES PEREZ JR.
       </h1>
     </header>
-    <!-- NAV BAR -->
-    <nav class="nav nav-pills flex-column flex-sm-row">
-      <a
-        style="background-color: dodgerblue; color: ghostwhite;"
-        class="flex-sm-fill text-sm-center nav-link active"
-        href="./index.html"
-        >ABOUT</a
-      >
-      <a
-        style="background-color: dodgerblue; color: ghostwhite;"
-        class="flex-sm-fill text-sm-center nav-link"
-        href="./portfolio.html"
-        >Portfolio</a
-      >
-      <a
-        style="background-color: dodgerblue; color: ghostwhite;"
-        class="flex-sm-fill text-sm-center nav-link"
-        href="./contact.html"
-        >Contact</a
-      >
-    </nav>
+   <!-- NAV BAR -->
+   <nav class="nav nav-pills flex-column flex-sm-row">
+    <a style="background-color: dodgerblue; color: ghostwhite; "class="flex-sm-fill text-sm-center nav-link active" href="./index.html"
+      >ABOUT</a
+    >
+    <a style="background-color: dodgerblue; color: ghostwhite;"class="flex-sm-fill text-sm-center nav-link" href="./portfolio.html"
+      >PORTFOLIO</a
+    >
+    <a style="background-color: dodgerblue; color: ghostwhite; "class="flex-sm-fill text-sm-center nav-link" href="./contact.html"
+      >CONTACT</a
+    >
+  </nav>
     <!-- CARD PLUGIN -->
     <div class="container">
       <div class="col-xs-4">
         <div style="background-color: cornsilk;"class="card">
-          <img style="margin-top: 100px;"
+          <!-- ABOUT HEADER TEXT -->
+          <h2 style="margin-top: 15px; margin-left: 15px;">
+            About
+          </h2>
+          <!-- HORIZONTAL LINE BREAK -->
+          <hr>
+          <img style="margin-top: 40px;"
             src="./images/main done.jpg"
             class="card-img-top"
             alt="Picture of Jose Ulices Perez Jr."
           />
           <div class="card-body">
             <p class="card-text">
-              WELCOME TO MY HOME WHERE I HAVE LIVED FOR OVER 7 YEARS! I am a full time fur baby Dad, full-time student, full-time worker, and part-time coder. I walked this Earth a total of 25 years. My hobbies include reading, writing, video games, and recently puzzles. I want to show the world what my eyes see and what my brain thinks. 
+              WELCOME TO MY HOME WHERE I HAVE LIVED FOR OVER 7 YEARS! 
+              I am a full time fur baby Dad, full-time student, full-time worker, and part-time coder. 
+              I walked this Earth a total of 25 years. 
+              My hobbies include reading, writing, and video games. 
+              I want to show the world what my eyes see and what my brain thinks. 
+            </p>
+            <p>
+              I currently live in Los Angeles born and raised. 
+              I am a taurus which also means I love food like the next person.
+              "You will never do anything in this world without courage. 
+              It is the greatest quality of the mind next to honor." ~ Aristotle ~
             </p>
           </div>
         </div>
@@ -72,14 +80,12 @@
         <h2 style ="font-size: smaller; text-align: center; color: aliceblue; padding: 20px;">
           @Copyright@JOCECODE.ACME.CO
         </footer>
-    
-
     <!-- JAVASCRIPT PLUGIN -->
     <script>
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"
-      >
+      
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -91,5 +97,39 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function validateForm() {
+        var name = document.getElementById("Name").value;
+        if (name == "") {
+          document.querySelector(".status").innerHTML = "Name cannot be empty";
+          return false;
+        }
+        var email = document.getElementById("email").value;
+        if (email == "") {
+          document.querySelector(".status").innerHTML = "Email cannot be empty";
+          return false;
+        } else {
+          var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          if (!re.test(email)) {
+            document.querySelector(".status").innerHTML =
+              "Email format invalid";
+            return false;
+          }
+        }
+        var subject = document.getElementById("subject").value;
+        if (subject == "") {
+          document.querySelector(".status").innerHTML =
+            "Subject cannot be empty";
+          return false;
+        }
+        var message = document.getElementById("message").value;
+        if (message == "") {
+          document.querySelector(".status").innerHTML =
+            "Message cannot be empty";
+          return false;
+        }
+        document.querySelector(".status").innerHTML = "Sending...";
+      }
+    </script>
   </body>
 </html>
