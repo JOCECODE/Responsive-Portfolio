@@ -9,3 +9,5 @@ This project features my portfolio of interests I would like to pursue with codi
 Index is the ABOUT page which is a small description of me.
 
 Contact features a form that allows user to put there name, email, and message to be able to email me to my email address.
+
+Link to deployed website https://jocecode.github.io/Responsive-Portfolio/
