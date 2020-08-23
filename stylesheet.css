@@ -3,10 +3,22 @@
   margin-top: 5px;
 }
 
-footer {
+.footer1 {
   margin-top: 200px;
   background-color: black;
 }
-body {
+.body1 {
+  background-color: darkgray;
+}
+
+.row {
+  padding-top: 30px;
+}
+.header2 {
+  background-color: black;
+  color: aliceblue;
+}
+
+.body2 {
   background-color: darkgray;
 }
