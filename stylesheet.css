@@ -19,3 +19,17 @@ footer {
   padding-bottom: 3.5%;
   background-color: cornsilk;
 }
+
+.contentContainer {
+  padding-bottom: 10px;
+  background-color: cornsilk;
+  margin-top: 3%;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.indexPadding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
