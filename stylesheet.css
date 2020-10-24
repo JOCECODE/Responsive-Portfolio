@@ -41,3 +41,27 @@ footer {
 .aligner {
   margin-right: 17px;
 }
+
+.bio {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: gray;
+}
+
+.links {
+  font-size: larger;
+}
+
+.backPhoto {
+  background-color: #28334aff;
+}
+
+#navNew {
+  background-color: #f65058ff;
+  color: #fbde44ff;
+}
+
+#navNew:hover {
+  background-color: #ffe77aff;
+  color: #f65058ff;
+}

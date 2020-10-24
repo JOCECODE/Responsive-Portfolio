@@ -22,12 +22,11 @@
     <link rel="stylesheet" href="./stylesheet.css" />
     <title>Contact</title>
   </head>
-  <body>
+  <body class="backPhoto">
     <!-- HEADER -->
     <header>
       <h1
-        class="aligner"
-        style="text-align: center; background-color: black; color: aliceblue;"
+        style="text-align: center; background-color: #F65058FF; color: #FBDE44FF;"
       >
         JOSE ULICES PEREZ JR.
       </h1>
@@ -35,20 +34,22 @@
     <!-- NAV BAR -->
     <nav class="nav nav-pills flex-column flex-sm-row">
       <a
-        style="background-color: dodgerblue; color: ghostwhite;"
+      id="navNew"  
+      
         class="flex-sm-fill text-sm-center nav-link active"
         href="./index.html"
         >ABOUT</a
       >
       <a
-        style="background-color: dodgerblue; color: ghostwhite;"
-        class="flex-sm-fill text-sm-center nav-link"
+      id="navNew"
+
+        class="flex-sm-fill text-sm-center nav-link navNew"
         href="./portfolio.html"
         >PORTFOLIO</a
       >
       <a
-        style="background-color: rgb(0, 0, 0); color: ghostwhite;"
-        class="flex-sm-fill text-sm-center nav-link"
+      id="navNew"
+        class="flex-sm-fill text-sm-center nav-link navNew"
         href="./contact.html"
         >CONTACT</a
       >
@@ -64,53 +65,16 @@
           <!-- HORIZONTAL BREAK -->
           <hr />
           <!-- NAME -->
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >Name</span
-              >
-            </div>
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Default"
-              aria-describedby="inputGroup-sizing-default"
-            />
-          </div>
-          <!-- EMAIL -->
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >Email</span
-              >
-            </div>
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Default"
-              aria-describedby="inputGroup-sizing-default"
-            />
-          </div>
-          <!-- MESSAGE -->
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Message</span>
-            </div>
-            <textarea
-              class="form-control"
-              aria-label="With textarea"
-            ></textarea>
-          </div>
-          <!-- SUBMIT BUTTON -->
-          <div>
-            <button
-              type="button"
-              class="btn btn-primary btn-lg"
-              onclick="validateForm();"
-              style="margin-top: 10px; background-color: dodgerblue;"
-            >
-              Submit
-            </button>
+          <div class="col-sm-12">
+            <a href="https://www.linkedin.com/in/jose-perez-jr-9016361b8/">
+           <h1 class="links">Linked-In</h1>
+           </a>
+           <br>
+           <a href="https://github.com/JOCECODE">
+           <h1 class="links">
+             Github
+           </h1>
+           </a>
           </div>
         </div>
       </div>
@@ -120,7 +84,7 @@
         style="
           font-size: smaller;
           text-align: center;
-          color: aliceblue;
+          background-color: #F65058FF; color: #FBDE44FF;
           padding: 20px;
         "
       >
