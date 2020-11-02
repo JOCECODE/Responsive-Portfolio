@@ -3,8 +3,12 @@
   margin-top: 5px;
 }
 
+header {
+  margin-bottom: -8px;
+}
+
 footer {
-  margin-top: 0%;
+  margin-top: 3%;
   background-color: black;
 }
 
@@ -34,10 +38,6 @@ footer {
   padding-right: 15px;
 }
 
-footer {
-  margin-top: 3%;
-}
-
 .aligner {
   margin-right: 17px;
 }
@@ -64,4 +64,8 @@ footer {
 #navNew:hover {
   background-color: #ffe77aff;
   color: #f65058ff;
+}
+
+.resume {
+  font-size: 24px;
 }
